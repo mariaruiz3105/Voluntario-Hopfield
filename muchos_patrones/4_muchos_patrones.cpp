@@ -134,7 +134,7 @@ int main(){
             }
         }
 
-        //guardamos en fichero el num de patrones almacenados y los que la red ha sido capaz de recordar
+        //guardamos en fichero
         archivo_final << P << "\t" << patrones_recordados << endl;
         cout << "P almacenados: " << P << " | P recordados: " << patrones_recordados << endl;
     }
@@ -143,6 +143,6 @@ int main(){
     auto tiempo_fin_total = chrono::high_resolution_clock::now();
     chrono::duration<double> duracion_total = tiempo_fin_total - tiempo_inicio_total;
     
-    cout << "\nSimulación completada en " << duracion_total.count() / 60.0 << " minutos." << endl;
+    cout << "\nFIN " << duracion_total.count() / 60.0 << " minutos." << endl;
     return 0;
 }
