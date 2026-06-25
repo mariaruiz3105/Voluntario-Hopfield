@@ -1,4 +1,3 @@
-#ANIMACIÓN CON DATOS ISING
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
@@ -10,7 +9,7 @@ tiempo_inicio = time.time()
 N=128
 
 for T in temperaturas:
-    print(f"Generando GIF para T = {T:.4f}...")
+    print(f"Generando GIF para T={T:.4f}")
     nombre_archivo = f'varios_patrones/con_deformacion/s_historial_T_{T:.6f}.txt'
     
     archivo = np.loadtxt(nombre_archivo)
